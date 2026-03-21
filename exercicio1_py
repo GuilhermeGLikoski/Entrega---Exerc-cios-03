@@ -1,0 +1,16 @@
+escolha = str(input("voce esta em uma floresta escolha o seu lado: esq ou dir: "))
+resposta = "s" or "n"
+if escolha == "esq":
+    input("escolha atravessar o rio ou não (s/n): ")
+    if resposta == "s":
+        print("voce esta seguro")
+    elif resposta == "n":
+        print("voce se perdeu")
+    
+if escolha == "dir":
+    input("voce encotrou uma montanha, escolha se voce vai subir ou nao (s/n): ")
+    if resposta == "s":
+        print("voce achou um tesouro kkk")
+    elif resposta == "n":
+        print ("voce continua perdido na floresta")
+        
