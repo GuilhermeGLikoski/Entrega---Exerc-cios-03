@@ -1,16 +1,17 @@
-escolha = str(input("voce esta em uma floresta escolha o seu lado: esq ou dir: "))
-resposta = "s" or "n"
+escolha = str(input("Você está em uma floresta. Escolha o seu lado: esq ou dir: ")).strip().lower()
+
 if escolha == "esq":
-    input("escolha atravessar o rio ou não (s/n): ")
+    resposta = str(input("Escolha atravessar o rio ou não (s/n): ")).strip().lower()
     if resposta == "s":
-        print("voce esta seguro")
+        print("Você está seguro.")
     elif resposta == "n":
-        print("voce se perdeu")
+        print("Você se perdeu na névoa.")
     
-if escolha == "dir":
-    input("voce encotrou uma montanha, escolha se voce vai subir ou nao (s/n): ")
+elif escolha == "dir":
+    resposta = str(input("Você encontrou uma montanha, escolha se você vai subir ou nao (s/n): ")).strip().lower()
     if resposta == "s":
-        print("voce achou um tesouro kkk")
+        print("Você achou um tesouro kkk.")
     elif resposta == "n":
-        print ("voce continua perdido na floresta")
-        
+        print("Você continua perdido na floresta.")
+else:
+    print("Caminho inválido. O vazio tomou conta.")
